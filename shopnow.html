@@ -5,65 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-COMMERCE</title>
     <link rel="stylesheet" href="styleshop.css">
-    <link rel="stylesheet" href="script.js">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-        
-    <!-- logo-->
-  <section id="header">
-  <div class="logo" style="font-family: 'Pacifico', cursive;">
-    <span style="color: #6e85b7;">s</span>  
-    <span style="color: #e07a5f;">u</span>  
-    <span style="color: #f2cc8f;">u</span> 
-    <span style="color: #81b29a;">r</span> 
-    <span style="color: #f4a261;">s</span> 
-    <span style="color: #cdb4db;">h</span> 
-    <span style="color: #4a4a4a;">a</span> 
-  </div>
-  <ul id="navbar">
-    <li><a href="index.html">Home</a></li>
-    <li><a class="active" href="shop.html">Shop</a></li>
-    <li><a href="cart.html"><i class="fa-thin fa-bag-shopping"></i></a></li>
-  </ul>
-</section>
+    <section id="header">
+        <div class="logo" style="font-family: 'Pacifico', cursive;">
+            <span style="color: #6e85b7;">s</span>  
+            <span style="color: #e07a5f;">u</span>  
+            <span style="color: #f2cc8f;">u</span> 
+            <span style="color: #81b29a;">r</span> 
+            <span style="color: #f4a261;">r</span> 
+            <span style="color: #cdb4db;">s</span> 
+            <span style="color: #4a4a4a;">h</span> 
+            <span style="color: #4a4a4a;">a</span> 
+        </div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="cart.html"><i class="fa-thin fa-bag-shopping"></i></a></li>
+        </ul>
+    </section>
 
+    <div class="container">
+        <h1>My Popcorn Store</h1>
+        <div id="products" class="product-list"></div>
+        <h2>Cart</h2>
+        <div id="cart" class="cart-list"></div>
+        <div id="total" class="cart-total"></div>
+    </div>
 
-  <div class="container">
-    <h1>My popcorn Store</h1>
-    
-    <div id="products" class="product-list"></div>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video autoplay muted loop playsinline id="bg-video1" class="bg-video">
+            <source src="vecteezy-lot-of-popcorn-pours-into-a-large-bucket-on-a-table-in-the-59018748_XFLWp64g.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop playsinline id="bg-video2" class="bg-video">
+            <source src="vecteezy-popcorn-is-poured-into-a-large-bucket-under-a-spotlight-in-a-59018737_ZXGvuu9R.mp4" type="video/mp4">
+        </video>
+    </div>
 
-    <h2>Cart</h2>
-    <div id="cart" class="cart-list"></div>
-    <div id="total" class="cart-total"></div>
-  </div>
-  <div class="video-background">
-  <video autoplay muted loop id="bg-video">
-    <source src="your-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<!-- First Background Video -->
-<video autoplay muted loop playsinline id="bg-video1" class="bg-video">
-  <source src="vecteezy-lot-of-popcorn-pours-into-a-large-bucket-on-a-table-in-the-59018748_XFLWp64g.mp4" type="video/mp4">
-</video>
-
-<!-- Second Background Video -->
-<video autoplay muted loop playsinline id="bg-video2" class="bg-video">
-  <source src="vecteezy-popcorn-is-poured-into-a-large-bucket-under-a-spotlight-in-a-59018737_ZXGvuu9R.mp4" type="video/mp4">
-</video>
-
-
-</div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
- 
-</body>
-</html>
-
-
