@@ -56,12 +56,12 @@ const products = [
     image: "Images/kernel4.webp"
   },
   {
-    id: 9,
-    name: "carton package",
-    price: 1200,
-    description: "Strong",
-    image: "Images/packaging 4.avif"
-  },
+  id: 9,
+  name: "carton package",
+  price: 1200,
+  description: "Strong",
+  image: "Images/packaging4.avif" 
+},
   {
     id: 10,
     name: "Cinima-Package",
@@ -144,14 +144,14 @@ const products = [
     name: "Butter-Popcorn",
     price: 1500,
     description: "Salty buttery treat",
-    image: "Images/butter 1.jpg"
+    image: "Images/butter1.jpg"
   },
   {
     id: 22,
     name: "Butter-Popcorn",
     price: 1800,
     description: "Sweet buttery treat",
-    image: "Images/butter 2.jpg"
+    image: "Images/butter2.jpg"
   },
   {
     id: 23,
@@ -165,7 +165,7 @@ const products = [
     name: "Cheese-Popcorn",
     price: 1700,
     description: "Salty Cheesytreat",
-    image: "Images/pop 1.jpeg"
+    image: "Images/pop1.jpeg"
   },
   {
     id: 24,
@@ -193,7 +193,7 @@ const products = [
     name: "Cheese-Popcorn",
     price: 1500,
     description: "Salty buttery treat",
-    image: "Images/pop 1.jpeg"
+    image: "Images/pop1.jpeg"
   },
 ];
 
