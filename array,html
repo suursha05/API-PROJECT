@@ -1,0 +1,110 @@
+Got it — let’s break this exact code down into **array methods**, **DOM manipulation**, and **events**.
+
+---
+
+## **1️⃣ Array Methods Used**
+
+You’re working with three array methods here:
+
+1. **`forEach()`**
+
+   * Loops through arrays to process each item.
+   * Used in:
+
+     * `products.forEach(...)` → loops through all products to display them.
+     * `cart.forEach(...)` → loops through cart items to display them.
+
+2. **`find()`**
+
+   * Searches for the **first** element in an array that matches a condition.
+   * Used in:
+
+     * `products.find(p => p.id === id)` → finds a product by its `id` before adding it to the cart.
+
+3. **`push()`**
+
+   * Adds an element to the end of an array.
+   * Used in:
+
+     * `cart.push(product)` → adds a product to the shopping cart.
+
+4. **`splice()`**
+
+   * Removes or replaces elements in an array.
+   * Used in:
+
+     * `cart.splice(index, 1)` → removes one cart item at the given index.
+
+---
+
+## **2️⃣ DOM Manipulation Used**
+
+Here’s every DOM-related action in the code:
+
+1. **`document.getElementById()`**
+
+   * Gets references to elements by their `id`.
+   * Examples:
+
+     * `"products"`, `"cart"`, `"total"`.
+
+2. **`innerHTML`**
+
+   * Sets or clears the HTML content of an element.
+   * Examples:
+
+     * `productDiv.innerHTML = " "` → clears the product display.
+     * `cartDiv.innerHTML = ""` → clears the cart display.
+     * `card.innerHTML = \`...\`\` → sets HTML for each product card.
+     * `itemDiv.innerHTML = \`...\`\` → sets HTML for each cart item.
+
+3. **`document.createElement()`**
+
+   * Creates a new HTML element.
+   * Examples:
+
+     * `document.createElement("div")` for product cards and cart items.
+
+4. **`appendChild()`**
+
+   * Adds a new element into the DOM as a child.
+   * Examples:
+
+     * `productDiv.appendChild(card)` → adds a product card to the products section.
+     * `cartDiv.appendChild(itemDiv)` → adds a cart item to the cart section.
+
+5. **`textContent`**
+
+   * Updates plain text inside an element without HTML formatting.
+   * Example:
+
+     * `totalDiv.textContent = \`Total: ₦\${total}\`\` → updates the total amount.
+
+---
+
+## **3️⃣ Events Used**
+
+You used **inline HTML event attributes** in template strings:
+
+1. **`onclick="addToCart(${product.id})"`**
+
+   * Fired when a user clicks the **Add to Cart** button for a product.
+
+2. **`onclick="removeItem(${index})"`**
+
+   * Fired when a user clicks the **Remove** button for an item in the cart.
+
+---
+
+✅ **Summary Table**
+
+| Category             | Methods / Properties Used                                                    |
+| -------------------- | ---------------------------------------------------------------------------- |
+| **Array Methods**    | `forEach`, `find`, `push`, `splice`                                          |
+| **DOM Manipulation** | `getElementById`, `innerHTML`, `createElement`, `appendChild`, `textContent` |
+| **Events**           | `onclick` (Add to Cart, Remove)                                              |
+
+---
+
+If you want, I can **rewrite this without inline `onclick`**, replacing them with `addEventListener()` so your JavaScript follows modern best practices and keeps HTML cleaner.
+Would you like me to do that now?

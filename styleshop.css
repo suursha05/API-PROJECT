@@ -1,0 +1,225 @@
+
+/* Header container */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+#header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navbar menu */
+#navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover & active styles */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #ff6f00;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active { 
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 20px;
+  color: #1e2a38;
+}
+
+/* Container */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+  border: none;
+}
+
+
+
+/* Product List Layout */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: center;
+}
+/* Product Card */
+.product-card {
+  background: #fff; 
+  border: 1px solid #ddd;
+  padding: 10px; 
+  width: 140px;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+} 
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* <-- deeper shadow */
+}
+/* Shorter Image */
+.product-card img {
+  width: 100%;
+  height: 110px; 
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* Shorter text spacing */
+.product-card h4 {
+  margin: 8px 0 4px; /* smaller margins */
+  font-size: 1em;
+}
+
+.product-card p {
+  font-size: 0.85em;
+  margin: 2px 0;
+}
+
+.product-card strong {
+  font-size: 1em;
+}
+
+
+/* Buttons */
+button {
+  background: #1e2a38; /* navy blue */
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ff6b00; /* orange hover */
+  transform: scale(1.05);
+}
+
+/* Cart Styling */
+.cart-list {
+  margin-top: 24px;
+  border-top: 2px solid #e6e6e6;
+  padding-top: 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ddd;
+  font-size: 0.95em;
+}
+
+.cart-total {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 14px;
+  color: #1e2a38;
+}
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* keep behind everything */
+}
+
+#bg-video2 {
+  opacity: 0.4; /* make second video semi-transparent */
+  z-index: -1; /* layer on top of first video */
+  mix-blend-mode: screen; /* optional blending effect */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
